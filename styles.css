@@ -1,0 +1,535 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: default;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+  color: hsl(216, 30%, 68%);
+}
+
+a {
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "DM Serif Display", serif;
+}
+
+p {
+  line-height: 1.5rem;
+  font-weight: 400;
+}
+
+nav,
+#heading,
+#info,
+#cta,
+#footer {
+  padding: 0 13%;
+}
+
+button {
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+  padding: 0.75rem 2rem;
+  cursor: pointer;
+}
+
+.main-heading {
+  font-size: 3.25rem;
+  font-weight: 400;
+  padding-top: 2rem;
+}
+
+/*********************************************** NAVBAR ***********************************************/
+
+.nav-bar {
+  display: flex;
+  height: 10vh;
+  align-items: center;
+}
+
+.nav-bar ul {
+  display: flex;
+  list-style-type: none;
+  margin-left: auto;
+  text-align: center;
+  align-items: center;
+}
+
+.nav-bar a {
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+  text-decoration: none;
+  color: hsl(216, 30%, 68%);
+  padding: 2rem;
+}
+
+.nav-bar a:hover {
+  color: hsl(256, 26%, 20%);
+}
+
+.dark-btn {
+  border: solid 1px hsl(256, 26%, 20%);
+  color: hsl(256, 26%, 20%);
+}
+
+.dark-btn:hover {
+  color: #fff;
+  background: hsl(256, 26%, 20%);
+}
+
+.nav-link-burger {
+  display: none;
+}
+
+/*********************************************** HEADING ***********************************************/
+
+#heading {
+  background-color: hsl(256, 26%, 20%);
+  color: #fff;
+  position: relative;
+  height: 65vh;
+  padding-top: 6%;
+}
+
+.img-bg-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 360px;
+}
+
+.img-bg-left {
+  position: absolute;
+  left: 0;
+  top: 50vh;
+  width: 175px;
+}
+
+.img-bg-left-m {
+  display: none;
+}
+
+.img-bg-right-m {
+  display: none;
+}
+
+.hr-light {
+  border: none;
+  border-top: solid 1px #fff;
+  width: 20%;
+}
+
+.heading-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  justify-content: space-around;
+}
+
+.title-img {
+  text-align: end;
+}
+
+.main-img {
+  width: 80%;
+}
+
+.heading p {
+  padding-bottom: 2rem;
+}
+
+.heading-btn {
+  border: solid 1px #fff;
+  background: none;
+  color: #fff;
+}
+
+.heading-btn:hover {
+  background: #fff;
+  color: hsl(256, 26%, 20%);
+}
+
+/*********************************************** INFO ***********************************************/
+
+#info {
+  padding-top: 13rem;
+  padding-bottom: 6rem;
+}
+
+.hr-dark {
+  border: none;
+  border-top: solid 1px hsl(216, 30%, 68%);
+  width: 20%;
+}
+
+#info .main-heading {
+  color: hsl(256, 26%, 20%);
+}
+
+.info-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  padding-top: 5rem;
+}
+
+.info-card img {
+  width: 75px;
+}
+
+#info .info-heading {
+  color: hsl(256, 26%, 20%);
+  padding: 1.5rem 0;
+}
+
+/*********************************************** CTA ***********************************************/
+
+#cta {
+  padding-bottom: 5rem;
+}
+
+.cta-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-around;
+  align-items: center;
+  background-color: hsl(256, 26%, 20%);
+  padding: 0 4rem;
+  position: relative;
+  height: 250px;
+}
+
+.cta-heading {
+  font-size: 2.75rem;
+  color: #fff;
+  font-weight: 400;
+}
+
+.cta-btn {
+  text-align: end;
+  position: relative;
+}
+
+.cta-img {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.cta-img-m {
+  display: none;
+}
+
+/*********************************************** FOOTER ***********************************************/
+
+#footer {
+  background: hsl(0, 0%, 98%);
+  position: relative;
+  min-height: 30vh;
+}
+
+.footer-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.footer-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-around;
+  height: 14vh;
+  align-items: center;
+  position: relative;
+}
+
+.social-icons {
+  text-align: end;
+}
+
+.social-icons i {
+  padding: 0.25rem;
+}
+
+.social-icons i:hover {
+  color: hsl(256, 26%, 20%);
+  cursor: pointer;
+}
+
+#footer hr {
+  border: none;
+  border-top: solid 1px hsl(216, 30%, 68%);
+  position: relative;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  position: relative;
+  padding-bottom: 2rem;
+}
+
+.footer-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-block-title {
+  padding: 2rem 0;
+}
+
+.footer-block a {
+  text-decoration: none;
+  color: hsl(256, 26%, 20%);
+  padding: 0.25rem 0;
+}
+
+.footer-block a:hover {
+  text-decoration: underline;
+}
+
+/*********************************************** MEDIA***********************************************/
+
+@media (max-width: 900px) {
+  #info,
+  #cta,
+  #footer {
+    padding: 0 5%;
+  }
+  nav {
+    padding: 0;
+  }
+  #heading {
+    padding: 0;
+  }
+
+  /************** NAV **************/
+  .nav-bar {
+    display: block;
+    height: auto;
+    align-items: center;
+    background-color: hsl(256, 26%, 20%);
+  }
+
+  .nav-bar ul {
+    display: block;
+    list-style-type: none;
+    margin-left: auto;
+    text-align: center;
+    align-items: center;
+    margin: 1rem 0 0;
+  }
+
+  .nav-bar a {
+    color: #fff;
+    padding: 0;
+    line-height: 3.5rem;
+  }
+
+  .nav-bar a:hover {
+    color: hsl(216, 30%, 68%);
+  }
+
+  .dark-btn {
+    border: solid 1px #fff;
+    color: #ffffff;
+    background: none;
+    margin-bottom: 3rem;
+  }
+
+  .dark-btn:hover {
+    color: hsl(256, 26%, 20%);
+    background: #fff;
+  }
+
+  .nav-link-burger {
+    display: initial;
+    position: absolute;
+    top: 1vh;
+    right: 2vh;
+    cursor: pointer;
+  }
+
+  .nav-top {
+    width: 100%;
+    background-color: #fff;
+    align-items: center;
+  }
+
+  .nav-link-logo {
+    padding: 2vh;
+  }
+
+  #nav-bar-mobile {
+    display: none;
+  }
+
+  /************** HEADING **************/
+
+  #heading {
+    color: #fff;
+    position: static;
+    height: auto;
+  }
+
+  .img-bg-right {
+    display: none;
+  }
+
+  .img-bg-left {
+    display: none;
+  }
+
+  .hr-light {
+    display: none;
+  }
+
+  .heading-section {
+    grid-template-columns: 1fr;
+    grid-gap: 0;
+  }
+
+  .title-img {
+    text-align: center;
+    grid-row: 1;
+  }
+
+  .title-txt {
+    text-align: center;
+    padding: 0 8%;
+    position: relative;
+  }
+
+  .main-img {
+    width: 100%;
+  }
+
+  .heading-btn {
+    margin-bottom: 3rem;
+  }
+
+  .img-bg-left-m {
+    display: initial;
+    position: absolute;
+    top: -4px;
+    left: 0;
+  }
+  .img-bg-right-m {
+    display: initial;
+    position: absolute;
+    right: 0;
+    bottom: -200px;
+  }
+
+  /************** INFO **************/
+
+  #info {
+    padding-top: 5rem;
+    padding-bottom: 6rem;
+    text-align: center;
+  }
+
+  .hr-dark {
+    width: 40%;
+    margin: auto;
+  }
+
+  .info-container {
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    padding-top: 1.5rem;
+  }
+
+  .info-card {
+    padding: 5% 10%;
+  }
+
+  /************** CTA **************/
+  #cta {
+    padding-bottom: 6rem;
+  }
+
+  .cta-container {
+    text-align: center;
+    grid-template-columns: 1fr;
+    padding: 0 4rem;
+    position: relative;
+    height: auto;
+  }
+
+  .cta-heading {
+    position: relative;
+    padding: 2rem 0;
+  }
+
+  .cta-btn {
+    text-align: center;
+  }
+
+  .cta-img {
+    display: none;
+  }
+
+  .cta-img-m {
+    display: initial;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 150px;
+  }
+
+  /************** FOOTER **************/
+
+  #footer {
+    position: relative;
+    padding-top: 2rem;
+  }
+
+  .footer-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .footer-header {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .social-icons {
+    text-align: center;
+    padding-bottom: 0.75rem;
+  }
+
+  .social-icons i {
+    padding: 0.5rem;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .footer-block {
+    display: flex;
+  }
+
+  .footer-block-title {
+    padding: 2rem 0;
+  }
+
+  .footer-block a {
+    padding: 0.5rem 0;
+  }
+}
